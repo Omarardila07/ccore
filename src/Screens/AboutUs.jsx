@@ -1,11 +1,12 @@
+import "../resolucion/movil.css"
 import img1 from '../Img/perfil.png'
-import misi from '../Img/misi.png'
-import visi from '../Img/visi.png'
+import Visi from '../icons/visi'
+import Misi from '../icons/misi'
 
 const About = () => {
     return (
     <>
-        <div className="pedrito flex self-center items-center g-8 text-white w-[90%] mt-10  ">
+        <div className="pedrito flex self-center items-center g-8 text-white w-[80%] mt-10  ">
             <div>
                 <h2 className=" text-[60px] font-bold text-green-600">Quien Soy ?</h2>
                 <p>Soy Omar Ardila, Programar de software. Actualmente,Me gradue en el técnico en software en el Servicio Nacional de Aprendizaje (Sena), graduado de bachillerato en la institución Cesar Pompeyo Mendoza Hinojoza. </p>
@@ -19,8 +20,8 @@ const About = () => {
         <div className="flex flex-col lg:flex-row gap-[10%] justify-center text-white mt-10 mx-auto">
                 <div className="bg-green-600 border-solid border-2 border-white p-10 lg:w-[40%] rounded-xl">
                     <div className="flex gap-[2%] text-center">
-                        <img className="w-[18%]" src={misi} alt="Misión" />
-                        <h4 className="text-[40px] font-bold mt-4">Mision</h4>
+                        <Misi />
+                        <h4 className="text-[40px] font-bold">Mision</h4>
                     </div>
                     <div className="w-[95%] text-left mt-[1%]">
                         <p>
@@ -28,10 +29,10 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <div className="bg-green-600 border-solid border-2 border-white p-10 lg:w-[40%] rounded-xl">
-                    <div className="flex gap-[5%] text-center">
-                        <img className="w-[15%]" src={visi} alt="Visión" />
-                        <h4 className="text-[40px] font-bold mt-2">Vision</h4>
+                <div className="Peee bg-green-600 border-solid border-2 border-white p-10 lg:w-[40%] rounded-xl">
+                    <div className="flex gap-[2%] text-center">
+                        <Visi />
+                        <h4 className="text-[40px] font-bold">Vision</h4>
                     </div>
                     <div className="w-[95%] text-left mt-[1%]">
                         <p>
