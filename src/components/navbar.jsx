@@ -18,13 +18,13 @@ const links = [
     id: "2",
   },
   {
-    link: "/contact",
-    text: "Contacto",
+    link: "/Cursos",
+    text: "Cursos",
     id: "3",
   },
   {
-    link: "/IntercusosEnVivo",
-    text: "Intercursos",
+    link: "/contact",
+    text: "Contacto",
     id: "4",
   },
 ];
