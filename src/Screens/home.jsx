@@ -45,7 +45,7 @@ const Home = () => {
         </p>
 
         {/* Sección de entrada y botón */}
-        <div className="mt-6 w-full flex flex-col items-center space-y-4">
+        <div className="mt-1 w-full flex flex-col items-center space-y-4">
           {!isLoggedIn && (
             <p className="text-red-500 font-semibold">
               Por favor, inicia sesión o regístrate para poder enviar un mensaje al WhatsApp.
