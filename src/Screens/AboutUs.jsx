@@ -5,43 +5,60 @@ import Misi from '../icons/misi'
 
 const About = () => {
     return (
-    <>
-        <div className="pedrito flex self-center items-center g-8 text-white w-[80%] mt-10  ">
-            <div>
-                <h2 className=" text-[60px] font-bold text-green-600">Quien Soy ?</h2>
-                <p>Soy Omar Ardila, Programar de software. Actualmente,Me gradue en el técnico en software en el Servicio Nacional de Aprendizaje (Sena), graduado de bachillerato en la institución Cesar Pompeyo Mendoza Hinojoza. </p>
-                <br />
-                <p>C-Core es una plataforma educativa dedicada a facilitar el aprendizaje y el éxito académico en el campo de la informática. Nuestro enfoque se centra en proporcionar recursos educativos de calidad, tutorías personalizadas y un entorno virtual colaborativo. Nos esforzamos por ser una fuente integral que no solo ayuda en la comprensión teórica, sino también en el desarrollo de habilidades prácticas. Nuestra misión es apoyar a los estudiantes en su viaje educativo, preparándolos para el éxito en sus estudios y futuras carreras en el ámbito informático.</p>
+        <div className="relative flex flex-col items-center justify-center min-h-screen bg-black text-white overflow-hidden max-w-screen">
+            {/* Círculos decorativos */}
+            <div className="absolute inset-0 overflow-hidden">
+                <div className="absolute top-10 left-2 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+                <div className="absolute top-1/4 right-1 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-2xl animate-pulse"></div>
+                <div className="absolute bottom-10 top-1/4 left-1/4 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+                <div className="absolute bottom-20 top-1/3 right-1/3 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-2xl animate-pulse"></div>
+                <div className="absolute bottom-20 top-1/1 right-1/3 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-2xl animate-pulse"></div>
+                <div className="absolute bottom-10 top-1/1 left-1/4 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+                <div className="absolute bottom-10 top-1/1 left-1/4 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+                <div className="absolute top-3/4 right-2 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-2xl animate-pulse"></div>
             </div>
-            <div>
-                <img className=' w-[1800px] rounded-[10%]' src={img1} />
+
+            {/* Contenido principal */}
+            <div className="relative z-10 w-[90%] mt-20 text-center">
+                <div className="flex flex-col lg:flex-row items-center gap-8">
+                    <div className="text-left">
+                        <h2 className="text-[50px] font-bold text-green-600">¿Quién Soy?</h2>
+                        <p>
+                            Soy Omar Ardila, Programador de Software. Me gradué en el técnico en software en el Servicio Nacional de Aprendizaje (SENA) y completé mi bachillerato en la institución Cesar Pompeyo Mendoza Hinojoza.
+                        </p>
+                        <br />
+                        <p>
+                            C-Core es una plataforma educativa dedicada a facilitar el aprendizaje y el éxito académico en informática. Nos enfocamos en proporcionar recursos de calidad, tutorías personalizadas y un entorno colaborativo. Nuestra misión es apoyar a los estudiantes en su formación, preparándolos para el éxito en el mundo tecnológico.
+                        </p>
+                    </div>
+                    <div>
+                        <img className="w-[400px] rounded-[10%] shadow-lg" src={img1} alt="Perfil" />
+                    </div>
+                </div>
+
+                {/* Misión y Visión */}
+                <div className="flex flex-col lg:flex-row gap-10 justify-center text-white mt-10 mx-auto">
+                    <div className="bg-green-600 border-2 border-white p-10 lg:w-[40%] rounded-xl shadow-lg">
+                        <div className="flex gap-2 items-center">
+                            <Misi />
+                            <h4 className="text-[40px] font-bold">Misión</h4>
+                        </div>
+                        <p className="text-left mt-2">
+                            En C-Core, trabajamos incansablemente para ser el epicentro del conocimiento y apoyo, proporcionando herramientas innovadoras, tutorías personalizadas y un espacio colaborativo. Nuestra misión es guiar a los estudiantes hacia el éxito en informática, fortaleciendo su confianza y habilidades.
+                        </p>
+                    </div>
+                    <div className="bg-green-600 border-2 border-white p-10 lg:w-[40%] rounded-xl shadow-lg">
+                        <div className="flex gap-2 items-center">
+                            <Visi />
+                            <h4 className="text-[40px] font-bold">Visión</h4>
+                        </div>
+                        <p className="text-left mt-2">
+                            Posicionarnos como la principal fuente de apoyo educativo en informática, donde los estudiantes encuentran inspiración, recursos avanzados y una comunidad activa. Aspiramos a ser reconocidos como un referente que impulsa el éxito académico y profesional en el ámbito tecnológico.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-[10%] justify-center text-white mt-10 mx-auto">
-                <div className="bg-green-600 border-solid border-2 border-white p-10 lg:w-[40%] rounded-xl">
-                    <div className="flex gap-[2%] text-center">
-                        <Misi />
-                        <h4 className="text-[40px] font-bold">Mision</h4>
-                    </div>
-                    <div className="w-[95%] text-left mt-[1%]">
-                        <p>
-                            En C-Core, trabajamos incansablemente para ser el epicentro del conocimiento y apoyo, proporcionando herramientas innovadoras, tutorías personalizadas y un espacio colaborativo. Nuestra misión es ser el cimiento esencial que guía a los estudiantes hacia un éxito sólido en sus estudios de informática, fortaleciendo su confianza y preparándolos para un futuro destacado en el ámbito informático.
-                        </p>
-                    </div>
-                </div>
-                <div className="Peee bg-green-600 border-solid border-2 border-white p-10 lg:w-[40%] rounded-xl">
-                    <div className="flex gap-[2%] text-center">
-                        <Visi />
-                        <h4 className="text-[40px] font-bold">Vision</h4>
-                    </div>
-                    <div className="w-[95%] text-left mt-[1%]">
-                        <p>
-                            Posicionarnos como la principal fuente de apoyo educativo, bajo el nombre de C-Core, donde estudiantes de informática encuentran inspiración, recursos avanzados y una comunidad activa. Aspiramos a ser reconocidos como un referente que cataliza el éxito académico, impulsando a los estudiantes hacia un rendimiento excepcional y el dominio de las habilidades informáticas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </>
     );
 };
 
