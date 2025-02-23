@@ -25,14 +25,14 @@ const Home = () => {
     <div className="relative flex flex-col items-center justify-center min-h-screen bg-black text-white overflow-hidden max-w-screen">
       {/* Círculos decorativos */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 left-20 w-72 h-72 bg-green-600 rounded-full opacity-30 blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/4 right-10 w-72 h-72 bg-green-500 rounded-full opacity-40 blur-2xl animate-pulse"></div>
+        <div className="absolute top-10 left-2 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/4 right-1 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-2xl animate-pulse"></div>
         <div className="absolute bottom-10 top-1/4 left-1/4 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 top-1/3 right-1/3 w-72 h-72 bg-green-400 rounded-full opacity-25 blur-2xl animate-pulse"></div>
+        <div className="absolute bottom-20 top-1/3 right-1/3 w-72 h-72 bg-green-700 rounded-full opacity-20 blur-2xl animate-pulse"></div>
       </div>
 
       {/* Contenido principal */}
-      <div className="relative z-10 flex flex-col text-center w-[90%] md:w-[70%] lg:w-[50%] p-6 bg-opacity-70 backdrop-blur-lg rounded-2xl shadow-2xl">
+      <div className="relative z-10 flex flex-col text-center w-[90%] md:w-[70%] lg:w-[50%] p-6  rounded-2xl shadow-2xl">
         <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl text-green-500 leading-tight">
           Obtén la calificación de tus sueños en informática con C-Core
         </h1>
