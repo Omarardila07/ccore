@@ -27,14 +27,12 @@ const Pages = () => {
       </div>
 
       <div className="bg-green-600 rounded-2xl w-[70%] flex flex-col items-center justify-center mt-4 w-auto h-auto">
-        <h2
-          className="text-white font-bold text-[40px] text-center"
-          style={{ opacity: fade ? 1 : 0 }}
+        <h2 key={currentWordIndex}
+          className="text-white font-bold text-[40px] text-center animate-slide"
         >
           {words[currentWordIndex]}
         </h2>
         <div>
-          
 
         </div>
       </div>
